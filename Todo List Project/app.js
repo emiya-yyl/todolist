@@ -15,6 +15,15 @@ add.addEventListener("click", e => {
     return;
   }
 
+  if (todoMonth >12 || todoMonth<1 ) {
+    alert("请输入正确日期");
+    return;
+  }
+
+  if (todoDate >31 || todoMonth<1 ) {
+    alert("请输入正确日期");
+    return;
+  }
   // create a todo
   let todo = document.createElement("div");
   todo.classList.add("todo");
