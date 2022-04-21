@@ -1,2 +1,2 @@
 # todolist
-It's my todolist project
+It's my Todolist project
