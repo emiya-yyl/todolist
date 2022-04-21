@@ -57,6 +57,9 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  overflow: hidden;
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */
 }
@@ -65,9 +68,10 @@ form input,
 form button {
   border: none;
   padding: 0.25rem 0.5rem;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin: 0.1rem;
-  border-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 form input[type="number"] {
@@ -89,6 +93,18 @@ form button {
   cursor: pointer;
   background-color: #009272;
   color: white;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 21.2px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+form button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  overflow: hidden;
 }
 
 section {
@@ -105,7 +121,7 @@ section {
 }
 
 section div.todo {
-  width: 30vw;
+  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,10 +159,14 @@ section div.todo button {
 
 section div.todo button.complete {
   background-color: #32ff32;
+  border-radius: 50%;
+  margin-left: 0.5rem;
 }
 
 section div.todo button.trash {
   background-color: red;
+  border-radius: 50%;
+  margin-left: 0.5rem;
 }
 
 div.sort {
@@ -167,9 +187,16 @@ div.sort button {
   background-color: #009272;
   color: white;
   border: none;
-  padding: 0.25rem 0.5rem;
-  font-size: 1.75rem;
-  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 24px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .done {

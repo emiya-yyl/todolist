@@ -36,14 +36,16 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s;
+  overflow: hidden;
 
   input,
   button {
     border: none;
     padding: 0.25rem 0.5rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin: 0.1rem;
-    border-radius: 10px;
+    transition: all 1s;
   }
 
   input[type="number"] {
@@ -67,7 +69,17 @@ form {
     cursor: pointer;
     background-color: rgb(0, 146, 114);
     color: white;
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 21.2px;
+    transition: all 1s;
   }
+}
+
+form button:hover{
+  transform: scale(1.1);
+  overflow: hidden;
 }
 
 section {
@@ -76,7 +88,7 @@ section {
   align-items: center;
 
   div.todo {
-    width: 30vw;
+    width: 40vw;
     display: flex;
     align-items: center;
     margin: 0.2rem 0rem;
@@ -109,9 +121,13 @@ section {
 
     button.complete {
       background-color: rgb(50, 255, 50);
+      border-radius: 50%;
+      margin-left: 0.5rem;
     }
     button.trash {
       background-color: red;
+      border-radius: 50%;
+      margin-left: 0.5rem;
     }
   }
 }
@@ -127,10 +143,14 @@ div.sort {
     background-color: rgb(0, 146, 114);
     color: white;
     border: none;
-    padding: 0.25rem 0.5rem;
-    font-size: 1.75rem;
-    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 24px;
+    transition: all 1s;
   }
+}
+button:hover{
+  transform: scale(1.1);
 }
 
 .done {
