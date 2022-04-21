@@ -17,9 +17,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
   h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -28,7 +29,7 @@ div.sturggle{
 justify-content: center;
 align-items: center;
 color: white;
-font-size: 1.5rem;
+font-size: 1.4rem;
 margin: 0.5rem;
 }
 
@@ -38,14 +39,19 @@ form {
   align-items: center;
   transition: all 1s;
   overflow: hidden;
+  margin-top: 80px;
 
   input,
   button {
     border: none;
     padding: 0.25rem 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin: 0.1rem;
+    border-radius: 20px;
     transition: all 1s;
+  }
+  input{
+    margin-right: 10px;
   }
 
   input[type="number"] {
@@ -67,12 +73,13 @@ form {
 
   button {
     cursor: pointer;
-    background-color: rgb(0, 146, 114);
+    background-color: rgb(46, 217, 46);
     color: white;
     margin-left: 0.5rem;
     padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    border-radius: 21.2px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50%;
     transition: all 1s;
   }
 }
