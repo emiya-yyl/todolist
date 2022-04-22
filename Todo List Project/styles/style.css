@@ -22,10 +22,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 header h1 {
@@ -33,7 +30,7 @@ header h1 {
   font-size: 4rem;
 }
 
-div.sturggle {
+header i.sturggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +42,7 @@ div.sturggle {
           align-items: center;
   color: white;
   font-size: 1.4rem;
-  margin: 0.5rem;
+  margin: 1rem;
 }
 
 form {
@@ -61,7 +58,7 @@ form {
   -webkit-transition: all 1s;
   transition: all 1s;
   overflow: hidden;
-  margin-top: 80px;
+  margin-top: 30px;
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */
 }
@@ -109,9 +106,9 @@ form button {
   transition: all 1s;
 }
 
-form button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+form button:focus {
+  -webkit-animation: change 0.1s alternate;
+          animation: change 0.1s alternate;
   overflow: hidden;
 }
 
@@ -149,7 +146,7 @@ section div.todo p {
 }
 
 section div.todo p.todo-text {
-  width: 50%;
+  width: 80%;
 }
 
 section div.todo p.todo-time {
@@ -177,6 +174,11 @@ section div.todo button.trash {
   margin-left: 0.5rem;
 }
 
+section div.todo button.complete:focus {
+  -webkit-animation: change 0.1s alternate;
+          animation: change 0.1s alternate;
+}
+
 div.sort {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +194,7 @@ div.sort {
 
 div.sort button {
   cursor: pointer;
-  background-color: #009272;
+  background-color: #0fba95;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -202,15 +204,29 @@ div.sort button {
   transition: all 1s;
 }
 
-button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+div.sort button:focus {
+  -webkit-animation: change 0.1s alternate;
+          animation: change 0.1s alternate;
 }
 
 .done {
   opacity: 0.5;
   text-decoration: line-through;
   text-decoration-thickness: 0.2rem;
+}
+
+@-webkit-keyframes change {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes change {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
 @-webkit-keyframes scaleUp {

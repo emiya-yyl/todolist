@@ -32,7 +32,7 @@ add.addEventListener("click", e => {
   text.innerText = todoText;
   let time = document.createElement("p");
   time.classList.add("todo-time");
-  time.innerText = todoMonth + " / " + todoDate;
+  time.innerText = todoMonth + " / " + todoDate ;
   todo.appendChild(text);
   todo.appendChild(time);
 
@@ -210,6 +210,7 @@ function mergeSort(arr) {
 }
 
 let sortButton = document.querySelector("div.sort button");
+
 sortButton.addEventListener("click", () => {
   // sort data
   let sortedArray = mergeSort(JSON.parse(localStorage.getItem("list")));

@@ -16,22 +16,22 @@ header {
   height: 15vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+  margin-top: 30px;
   h1 {
     color: white;
     font-size: 4rem;
   }
+  i.sturggle{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  color: white;
+  font-size: 1.4rem;
+  margin: 1rem;
+  }
 }
 
-div.sturggle{
-  display: flex;
-justify-content: center;
-align-items: center;
-color: white;
-font-size: 1.4rem;
-margin: 0.5rem;
-}
+
 
 form {
   display: flex;
@@ -39,7 +39,7 @@ form {
   align-items: center;
   transition: all 1s;
   overflow: hidden;
-  margin-top: 80px;
+  margin-top: 30px;
 
   input,
   button {
@@ -84,8 +84,8 @@ form {
   }
 }
 
-form button:hover{
-  transform: scale(1.1);
+form button:focus{
+  animation: change 0.1s alternate;
   overflow: hidden;
 }
 
@@ -93,7 +93,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  
   div.todo {
     width: 40vw;
     display: flex;
@@ -111,7 +111,7 @@ section {
     }
 
     p.todo-text {
-      width: 50%;
+      width: 80%;
     }
     p.todo-time {
       width: 30%;
@@ -136,6 +136,9 @@ section {
       border-radius: 50%;
       margin-left: 0.5rem;
     }
+    button.complete:focus{
+      animation: change 0.1s alternate;
+     }
   }
 }
 
@@ -147,17 +150,19 @@ div.sort {
 
   button {
     cursor: pointer;
-    background-color: rgb(0, 146, 114);
+    background-color: rgb(15, 186, 149);
     color: white;
     border: none;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
     border-radius: 24px;
     transition: all 1s;
+    
   }
-}
-button:hover{
-  transform: scale(1.1);
+
+  button:focus{
+   animation: change 0.1s alternate;
+  }
 }
 
 .done {
@@ -166,6 +171,11 @@ button:hover{
   text-decoration-thickness: 0.2rem;
 }
 
+@keyframes change{
+  to{
+    transform: scale(0.8);
+  }
+}
 @keyframes scaleUp {
   from {
     transform: scale(0);
